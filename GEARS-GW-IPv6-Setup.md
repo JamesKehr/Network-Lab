@@ -22,7 +22,7 @@ Use a tool to generate a ULA IPv6 prefix.
 $ipv6 = iwr https://raw.githubusercontent.com/JamesKehr/Azure/main/Get-AzPrivateIPv6Subnet.ps1 | iex
 ```
 
-- The use this command to get the subnet CIDR syntax that can be used in the config below.
+- Then use this command to get the subnet CIDR syntax that can be used in the config below.
 
 ```powershell
 $ipv6.GetAzSubnet(0)
@@ -378,7 +378,7 @@ Add the following to the config file:
 
 ### OPTION 1: Configure for NAT64 (Recommended)
 
-This prepares BIND9 DNS64 to work with tayga NAT64.
+This prepares BIND9 DNS64 to work with jool NAT64.
 
 ```
         dns64 64:ff9b::/96 {
@@ -389,7 +389,7 @@ This prepares BIND9 DNS64 to work with tayga NAT64.
 
 ### OPTION 2: Configure for ULA
 
-This option 
+This option configures DNS64 to use your ULA (Unique Local Address) prefix instead of the well-known NAT64 prefix. Use this if you're not planning to use NAT64, or if you have a specific ULA-based IPv6 addressing scheme.
 
 Template:
 ```
@@ -398,7 +398,7 @@ dns64 <your_ULA_prefix>/<prefix_length> {};
 
 Example:
 ```
- dns64 fd1a:7148:e9a0:186a::/64 {};
+dns64 fd1a:7148:e9a0:186a::/64 {};
 ```
 
 
@@ -418,7 +418,7 @@ Now perform a DNS lookup for a website with only an IPv4 address.
 Resolve-DnsName jammrock.com -Server 10.1.0.1
 ```
 
-This should return the IPv4 address and the a DNS64 translated address using the lab's ULA address space.
+This should return the IPv4 address and a DNS64 translated address using the lab's ULA address space.
 
 ```
 Name                                           Type   TTL   Section    IPAddress

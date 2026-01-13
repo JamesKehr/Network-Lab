@@ -53,7 +53,7 @@ Install required components for the lab. You can copy/paste the commands when us
 
 [Optional] Install mDNS. 
 - This will allow you to ssh using <hostname>.local rather than hunting for the IP address of the gateway.
-- mDNS will not work if the gateway is behind a Default Switch, it wil only work if the gateway is attached to an external vmSwitch.
+- mDNS will not work if the gateway is behind a Default Switch, it will only work if the gateway is attached to an external vmSwitch.
 
 ```bash
 sudo apt install avahi-daemon
