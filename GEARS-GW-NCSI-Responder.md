@@ -113,7 +113,7 @@ Create the zone file based on the output below, the RFC standards, and the BIND9
 https://bind9.readthedocs.io/en/v9.18.14/chapter3.html#soa-rr
 https://wiki.debian.org/Bind9#File_.2Fetc.2Fbind.2Fnamed.conf.local
 
-Example file (replace IP addresses and records as apprpriate):
+Example file (replace IP addresses and records as appropriate):
 
 ```
 ; base zone file for example.com

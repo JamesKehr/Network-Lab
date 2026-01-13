@@ -404,7 +404,7 @@ Example:
 
 Save and close the file: Ctrl+X, Y, Enter
 
-Verfiy the file and restart the service.
+Verify the file and restart the service.
 
 ```
 named-checkconf /etc/bind/named.conf.options

@@ -102,7 +102,7 @@ Use the arrow, home, and end keys, to position the cursor inside nano. Press ent
 Edit the file so it looks something like this (spacing MUST be exact!):
 
 - Change the name server (DNS) addresses to match your network configuration.
-- The addresses may look differnt if you setup the IPs during the Ubuntu install, and that's fine.
+- The addresses may look different if you setup the IPs during the Ubuntu install, and that's fine.
 - The order NICs may be different in your setup if you created all three NICs prior to Ubuntu setup. Adjust the config file accordingly.
 
 ```yaml

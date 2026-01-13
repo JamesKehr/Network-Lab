@@ -98,7 +98,7 @@ Example:
 nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Open the netplan file and add the IPv4 address back to the Internal interface (example: eth1). Or, comment/uncomment the approritate lines to enable dual-stack again.
+Open the netplan file and add the IPv4 address back to the Internal interface (example: eth1). Or, comment/uncomment the appropriate lines to enable dual-stack again.
 
 ### Reboot
 
