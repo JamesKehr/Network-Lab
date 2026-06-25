@@ -1,8 +1,11 @@
 Setup the gateway following the steps in:
 
 [00 Gateway VM Setup](00-Gateway-VM-Setup.md)
+
 [01 Gateway Basic Setup](01-Gateway-Basic-Setup.md)
+
 [02 Add DHCPv4](02-Add-DHCPv4.md)
+
 [03 Gateway IPv6 Setup](03-Gateway-IPv6-Setup.md)
 
 Make the following changes to the netplan file:
